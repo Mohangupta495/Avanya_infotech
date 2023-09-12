@@ -1,0 +1,10 @@
+.logoText{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    font-size: 25px;
+    gap: 10px;
+    font-family: sans-serif;
+}
