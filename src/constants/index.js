@@ -27,7 +27,7 @@ export const navLinks = [
     title: "Career",
   },
   {
-    id: "clients3",
+    id: "contact",
     title: "Contact US",
   },
 ];
@@ -40,25 +40,25 @@ export const linksForSideMenu = [
     icon:AiFillHome,
   },
   {
-    id: "company",
+    id: "features",
     title: "Company",
     link:"",
     icon:BsGlobe2
   },
   {
-    id: "services",
+    id: "clients",
     title: "Services",
     link:"",
     icon:BiSolidLayer,
   },
   {
-    id: "technologies",
+    id: "clients",
     title: "Technologies",
     link:"",
     icon:IoSettingsSharp
   },
   {
-    id: "products",
+    id: "product",
     title: "Products",
     link:"",
     icon:ImCart

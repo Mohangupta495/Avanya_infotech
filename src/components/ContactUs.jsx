@@ -6,7 +6,7 @@ import {BsStopwatchFill} from "react-icons/bs"
 
 const ContactUs = () => {
   return (
-    <section>
+    <section id="contact">
     
     <div class="section-header">
       <div class="container">

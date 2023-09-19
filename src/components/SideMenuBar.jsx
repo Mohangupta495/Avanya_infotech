@@ -4,6 +4,7 @@ import { linksForSideMenu, navLinks } from "../constants";
 import SideMenuButtons from "../small-components/SideMenuButtons";
 import Button from '@mui/material/Button';
 import "./navbar.css"
+import { navigateToScreen } from "../constants/utils";
 
 export default class SideMenuBar extends Component {
     constructor(props){
@@ -29,10 +30,10 @@ export default class SideMenuBar extends Component {
         </div>
         <div className="mt-10 flex gap-9 flex-col">
             {linksForSideMenu.map((button)=>{
-                return(<SideMenuButtons name={button.title} icon={button.icon} isShowFullMenu={this.state.isShowFullMenu}/>)
+                return(<SideMenuButtons name={button.title} icon={button.icon} isShowFullMenu={this.state.isShowFullMenu} id={button.id}/>)
             })}
         </div>
-        {isShowFullMenu && <Button variant="contained" style={{background:"#cf1212",width:"100%",marginTop:'60px'}}>Contact US</Button>}
+        {isShowFullMenu && <Button variant="contained" style={{background:"#cf1212",width:"100%",marginTop:'60px'}} onClick={()=>{navigateToScreen("#contact")}} >Contact US</Button>}
         
         {isShowFullMenu && <div className="flex flex-col items-center justify-center p-10 absolute bottom-32">
             <p style={{color:"rgb(123 135 137)",fontSize:13}}>Have any questions?</p>
