@@ -1,7 +1,7 @@
 import { quotes } from "../assets";
 
-const FeedbackCard = ({ content, name, title, img }) => (
-  <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
+const FeedbackCard = ({ content, name, title, img,index }) => (
+  <div className="flex flex-col px-5 py-5 rounded-[20px]  max-w-[280px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card" style={{background:index%2===0? "linear-gradient(144.39deg,#ffffff -278.56%,#6d6d6d -78.47%,#11101d 91.61%)":""}}>
     <img src={quotes} alt="double_quotes" className="w-[42.6px] h-[27.6px] object-contain" />
     <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-white my-10">
       {content}

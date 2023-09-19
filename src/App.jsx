@@ -1,8 +1,14 @@
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import SideMenuBar from "./components/SideMenuBar";
+import UpdateData from "./small-components/Testing";
+import ContactUs from "./components/ContactUs";
+import './components/navbar.css'
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div style={{overflowX:"hidden",width:"100%"}}>
+    <SideMenuBar/>
+    <div className="bg-primary w-full overflow-hidden mainDivCompon">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
@@ -22,12 +28,15 @@ const App = () => (
         <Billing />
         <CardDeal />
         <Testimonials />
-        <Clients />
+        {/* <Clients /> */}
+        <ContactUs/>
         <CTA />
         <Footer />
       </div>
     </div>
   </div>
+  </div>
+  
 );
 
 export default App;

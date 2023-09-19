@@ -11,8 +11,11 @@ const Footer = () => (
           alt="hoobank"
           className="w-[266px] h-[72.14px] object-contain"
         />
-        <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
-          A new way to make the payments easy, reliable and secure.
+        {/* style={{textAlign:'center'}} */}
+        <p className={`${styles.paragraph} mt-4 max-w-[612px]`} >
+        Avinya Infotech,is a professional IT services firm specializing in technical screening, consulting, project management and staffing related products. Our solutions are designed to have faster productivity of client's operations. Our goal is to have a completely satisfied client.
+
+Copyrig
         </p>
       </div>
 

@@ -1,4 +1,9 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {AiFillHome} from 'react-icons/ai'
+import {BsGlobe2,BsFillPeopleFill} from 'react-icons/bs'
+import {BiSolidLayer} from "react-icons/bi"
+import {IoSettingsSharp} from "react-icons/io5"
+import {ImCart} from "react-icons/im"
 
 export const navLinks = [
   {
@@ -27,27 +32,60 @@ export const navLinks = [
   },
 ];
 
+export const linksForSideMenu = [
+  {
+    id: "home",
+    title: "Home",
+    link:"",
+    icon:AiFillHome,
+  },
+  {
+    id: "company",
+    title: "Company",
+    link:"",
+    icon:BsGlobe2
+  },
+  {
+    id: "services",
+    title: "Services",
+    link:"",
+    icon:BiSolidLayer,
+  },
+  {
+    id: "technologies",
+    title: "Technologies",
+    link:"",
+    icon:IoSettingsSharp
+  },
+  {
+    id: "products",
+    title: "Products",
+    link:"",
+    icon:ImCart
+  },
+];
+
 export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Quality is our Motto",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "The two job portals Avinya Infotech, leaders in their respective regions, belong to Avinya.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Experience is our Strength",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "With our large variety of activities, our presence at numerous events, in advertising and online on your job offers.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "We are Versatile",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Publishing an ad is not the only way to reach executives and specialists; that is why we are constantly developing complementary solutions.",
   },
 ];
 
@@ -55,45 +93,86 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "quick implementation of cloud and cloud data services",
+    name: "Mobile App Design",
+    title: "App Development",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "Ecommerce,B2B and B2C Webdesign and Development",
+    name: "Web Design & Development",
+    title: "Web Development",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "Setting up your business for the future is the focal point of our IT Strategy and Architecture services",
+    name: "IT Strategy & Architecture",
+    title: "Management Development",
+    img: people03,
+  },
+  {
+    id: "feedback-4",
+    content:
+      "Our DevOps department specializes in ensuring high velocity and high quality software",
+    name: "Devops",
+    title: "Connecting Development",
+    img: people03,
+  },
+  {
+    id: "feedback-5",
+    content:
+      "Without much hassles on your to do list every day.",
+    name: "On Site Staffing",
+    title: "Management Development",
+    img: people03,
+  },
+  {
+    id: "feedback-6",
+    content:
+      "We can handle your outsourced work at our New Jersey as well Surat ODC",
+    name: "Outsource",
+    title: "Management Development",
+    img: people03,
+  },
+  {
+    id: "feedback-7",
+    content:
+      "Product,Customer,Financial, Asset, Human Resources and Manufacturing Analysis",
+    name: "Data Analysis",
+    title: "Data Management",
+    img: people03,
+  },
+  {
+    id: "feedback-8",
+    content:
+      "Without much hassles on your to do list every day",
+    name: "Offshore Staffing",
+    title: "Staffing Management",
     img: people03,
   },
 ];
 
 export const stats = [
-  {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
-  },
-  {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
-  },
-  {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
+  // {
+  //   id: "stats-1",
+  //   title: "User Active",
+  //   value: "3800+",
+  // },
+  // {
+  //   id: "stats-2",
+  //   title: "Trusted by Company",
+  //   value: "230+",
+  // },
+  // {
+  //   id: "stats-3",
+  //   title: "Transaction",
+  //   value: "$230M+",
+  // },
+  {}
 ];
 
 export const footerLinks = [
@@ -186,20 +265,21 @@ export const socialMedia = [
 ];
 
 export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
+  // {
+  //   id: "client-1",
+  //   logo: airbnb,
+  // },
+  // {
+  //   id: "client-2",
+  //   logo: binance,
+  // },
+  // {
+  //   id: "client-3",
+  //   logo: coinbase,
+  // },
+  // {
+  //   id: "client-4",
+  //   logo: dropbox,
+  // },
+  {}
 ];

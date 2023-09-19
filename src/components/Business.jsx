@@ -22,13 +22,10 @@ const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
-        the money.
+      We Offer Best Features <br className="sm:block hidden" /> For Software Solutions.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
+      Avinya Infotech,is a professional IT services firm specializing in technical screening, consulting, project management and staffing related products. Our solutions are designed to have faster productivity of client's operations. Our goal is to have a completely satisfied client.
       </p>
 
       <Button styles={`mt-10`} />

@@ -8,3 +8,29 @@
     gap: 10px;
     font-family: sans-serif;
 }
+.logoTextForSideMenu{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 17px;
+    gap:6px;
+    font-family: sans-serif;
+}
+.sideMenu{
+background: rgb(8, 11, 28);
+border-right: 3px solid rgb(20, 57, 66);
+z-index: 10000;
+}
+.mainDivCompon{
+    margin-left: 40px;
+}
+@media (max-width: 763px) {
+    .sideMenu{
+        display: none;
+    }
+    .mainDivCompon{
+        margin-left: 0px;
+    }
+  }

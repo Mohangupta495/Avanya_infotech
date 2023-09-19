@@ -14,13 +14,17 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> billing &
-        invoicing
+      We Offer One Of The  <br className="sm:block hidden" /> Best Applicant Tracking System
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-        aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-        placerat.
+      Manage candidate, job submissions, placements, interviews.<br></br>
+      Track recruiters activities.<br></br>
+      Multi-user calendar to get overall view.<br></br>
+      Detailed reports.<br></br>
+      Easy to operate..<br></br>
+      Excellent speed.<br></br>
+      Easy high-level profit-loss management.<br></br>
+      Free for most of the companies.<br></br>
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">

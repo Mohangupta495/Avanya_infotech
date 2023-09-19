@@ -1,0 +1,11 @@
+.side-menu-button {
+    transition: color 0.3s; /* Add a smooth transition effect */
+  
+    /* Initial styles */
+    color: #33bbcf;
+  }
+  
+  .side-menu-button:hover {
+    /* Hover styles */
+    color: white!important;
+  }
