@@ -4,10 +4,9 @@ import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import "./navbar.css"
 
-const Navbar = () => {
+const Navbar = ({onMenuButtonPressed,isMenuOpen}) => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="hoobank" className="w-[60px] h-[60px]" />
@@ -30,10 +29,10 @@ const Navbar = () => {
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
-          src={toggle ? close : menu}
+          src={isMenuOpen ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
+          onClick={() =>{onMenuButtonPressed(!isMenuOpen)}}
         />
 
         <div

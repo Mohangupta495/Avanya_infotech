@@ -4,14 +4,26 @@ import SideMenuBar from "./components/SideMenuBar";
 import UpdateData from "./small-components/Testing";
 import ContactUs from "./components/ContactUs";
 import './components/navbar.css'
+import React, { Component } from 'react'
 
-const App = () => (
-  <div style={{overflowX:"hidden",width:"100%"}}>
-    <SideMenuBar/>
+export default class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      isMenuOpen:false,
+    }
+  }
+  onMenuButtonPressed=(isShowMenu)=>{
+    this.setState({isMenuOpen:isShowMenu})
+  }
+  render() {
+    return (
+      <div style={{overflowX:"hidden",width:"100%"}}>
+    <SideMenuBar isMenuOpen={this.state.isMenuOpen}/>
     <div className="bg-primary w-full overflow-hidden mainDivCompon">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Navbar />
+        <Navbar onMenuButtonPressed={this.onMenuButtonPressed} isMenuOpen={this.state.isMenuOpen}/>
       </div>
     </div>
 
@@ -36,7 +48,6 @@ const App = () => (
     </div>
   </div>
   </div>
-  
-);
-
-export default App;
+    )
+  }
+}

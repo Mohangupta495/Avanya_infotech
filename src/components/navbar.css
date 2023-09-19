@@ -28,7 +28,7 @@ z-index: 10000;
 }
 @media (max-width: 763px) {
     .sideMenu{
-        display: none;
+        /* display: none; */
     }
     .mainDivCompon{
         margin-left: 0px;

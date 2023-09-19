@@ -14,8 +14,11 @@ export default class SideMenuBar extends Component {
     }
   render() {
     const {isShowFullMenu}=this.state;
+    const sideMenuClassName = `h-full fixed left-0 top-0 p-5 sideMenu lg:sideMenu ${
+        this.props.isMenuOpen ? '' : 'hidden lg:block'
+      }`;
     return (
-      <div className="h-full fixed left-0 top-0 p-5 sideMenu" onMouseOver={()=>{this.setState({isShowFullMenu:true})}}  onMouseOut={()=>{this.setState({isShowFullMenu:false})}} style={{width:!isShowFullMenu?"70px":"auto"}}>
+      <div className={sideMenuClassName} onMouseOver={()=>{this.setState({isShowFullMenu:true})}}  onMouseOut={()=>{this.setState({isShowFullMenu:false})}} style={{width:!isShowFullMenu?"70px":"auto"}}>
         <div className="flex ">
           <img src={logo} alt="hoobank" className="w-[34px] h-[34px]" />
 
