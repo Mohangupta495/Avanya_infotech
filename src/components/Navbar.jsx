@@ -5,24 +5,24 @@ import { navLinks } from "../constants";
 import "./navbar.css"
 
 const Navbar = ({onMenuButtonPressed,isMenuOpen}) => {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="hoobank" className="w-[60px] h-[60px]" />
       <div className="logoText">
-       <p>Avaniya </p><span className="text-gradient">Technology</span>
+       <p>Avinya </p><span className="text-gradient">Infotech</span>
        </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
+              active ==nav.id ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+            onClick={() => {setActive(nav.id)}}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`/${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>
@@ -49,7 +49,7 @@ const Navbar = ({onMenuButtonPressed,isMenuOpen}) => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={``}>{nav.title}</a>
               </li>
             ))}
           </ul>

@@ -24,16 +24,16 @@ export default class SideMenuBar extends Component {
           <img src={logo} alt="hoobank" className="w-[34px] h-[34px]" />
 
           {isShowFullMenu && <div className="logoTextForSideMenu">
-            <p>Avaniya </p>
-            <span className="text-gradient">Technology</span>
+            <p>Avinya </p>
+            <span className="text-gradient">Infotech</span>
           </div>}
         </div>
         <div className="mt-10 flex gap-9 flex-col">
             {linksForSideMenu.map((button)=>{
-                return(<SideMenuButtons name={button.title} icon={button.icon} isShowFullMenu={this.state.isShowFullMenu} id={button.id}/>)
+                return(<SideMenuButtons name={button.title} icon={button.icon} isShowFullMenu={this.state.isShowFullMenu} id={button.id} link={button.link}/>)
             })}
         </div>
-        {isShowFullMenu && <Button variant="contained" style={{background:"#cf1212",width:"100%",marginTop:'60px'}} onClick={()=>{navigateToScreen("#contact")}} >Contact US</Button>}
+        {isShowFullMenu && <Button variant="contained" style={{background:"#cf1212",width:"100%",marginTop:'60px'}} onClick={()=>{navigateToScreen("/contact")}} >Contact US</Button>}
         
         {isShowFullMenu && <div className="flex flex-col items-center justify-center p-10 absolute bottom-32">
             <p style={{color:"rgb(123 135 137)",fontSize:13}}>Have any questions?</p>

@@ -7,11 +7,11 @@ import {ImCart} from "react-icons/im"
 
 export const navLinks = [
   {
-    id: "home",
+    id: "",
     title: "Home",
   },
   {
-    id: "features",
+    id: "about",
     title: "About US",
   },
   {
@@ -19,12 +19,8 @@ export const navLinks = [
     title: "Products",
   },
   {
-    id: "clients",
+    id: "service",
     title: "Service",
-  },
-  {
-    id: "clients2",
-    title: "Career",
   },
   {
     id: "contact",
@@ -40,27 +36,27 @@ export const linksForSideMenu = [
     icon:AiFillHome,
   },
   {
-    id: "features",
-    title: "Company",
-    link:"",
-    icon:BsGlobe2
-  },
-  {
     id: "clients",
     title: "Services",
-    link:"",
+    link:"service",
     icon:BiSolidLayer,
   },
   {
-    id: "clients",
-    title: "Technologies",
-    link:"",
-    icon:IoSettingsSharp
+    id: "features",
+    title: "Company",
+    link:"about",
+    icon:BsGlobe2
   },
+  // {
+  //   id: "clients",
+  //   title: "Technologies",
+  //   link:"",
+  //   icon:IoSettingsSharp
+  // },
   {
     id: "product",
     title: "Products",
-    link:"",
+    link:"product",
     icon:ImCart
   },
 ];
@@ -157,21 +153,21 @@ export const feedback = [
 ];
 
 export const stats = [
-  // {
-  //   id: "stats-1",
-  //   title: "User Active",
-  //   value: "3800+",
-  // },
-  // {
-  //   id: "stats-2",
-  //   title: "Trusted by Company",
-  //   value: "230+",
-  // },
-  // {
-  //   id: "stats-3",
-  //   title: "Transaction",
-  //   value: "$230M+",
-  // },
+  {
+    id: "stats-1",
+    title: "User Active",
+    value: "3800+",
+  },
+  {
+    id: "stats-2",
+    title: "Trusted by Company",
+    value: "230+",
+  },
+  {
+    id: "stats-3",
+    title: "Transaction",
+    value: "$230M+",
+  },
   {}
 ];
 
@@ -242,21 +238,21 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
+  // {
+  //   id: "social-media-1",
+  //   icon: instagram,
+  //   link: "https://www.instagram.com/",
+  // },
+  // {
+  //   id: "social-media-2",
+  //   icon: facebook,
+  //   link: "https://www.facebook.com/",
+  // },
+  // {
+  //   id: "social-media-3",
+  //   icon: twitter,
+  //   link: "https://www.twitter.com/",
+  // },
   {
     id: "social-media-4",
     icon: linkedin,
