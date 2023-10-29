@@ -14,8 +14,6 @@ const Footer = () => (
         {/* style={{textAlign:'center'}} */}
         <p className={`${styles.paragraph} mt-4 max-w-[612px]`} >
         Avinya Infotech,is a professional IT services firm specializing in technical screening, consulting, project management and staffing related products. Our solutions are designed to have faster productivity of client's operations. Our goal is to have a completely satisfied client.
-
-Copyrig
         </p>
       </div>
 
@@ -44,7 +42,7 @@ Copyrig
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-        Copyright Ⓒ 2022 HooBank. All Rights Reserved.
+        Copyright Ⓒ 2023 Avinya. All Rights Reserved.
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">

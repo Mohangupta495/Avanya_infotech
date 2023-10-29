@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import "./navbar.css"
 
 const Navbar = ({onMenuButtonPressed,isMenuOpen}) => {
+  useEffect(()=>{
+    var newStr = window.location.pathname.substring(1); // Removes the first letter
+    setActive(newStr);
+  })
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[60px] h-[60px]" />
-      <div className="logoText">
+      <a href="/"><img src={logo} alt="hoobank" className="w-[60px] h-[60px]" style={{cursor:"pointer"}} /></a>
+      <a href="/">
+      <div className="logoText" style={{cursor:"pointer"}}>
        <p>Avinya </p><span className="text-gradient">Infotech</span>
        </div>
+       </a>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li

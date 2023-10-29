@@ -27,6 +27,10 @@ const ContactUs = () => {
             <div class="contact-info-content">
               <h4>Address</h4>
               <p>Noida, Uttar Pradesh, India<br/></p>
+              <p>Kendall Park NJ,New York USA</p>
+              <p>
+Surat, Gujarat, India</p>
+
             </div>
           </div>
           
@@ -50,7 +54,7 @@ const ContactUs = () => {
               <h4>Email</h4>
              <p>info@avinyait.com
                 <br></br>
-                www.avinyait.com</p>
+                </p>
             </div>
           </div>
         </div>

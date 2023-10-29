@@ -1,4 +1,11 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import s1 from "../assets/icons/s1.png";
+import s2 from "../assets/icons/s2.png";
+import s3 from "../assets/icons/s3.png";
+import s4 from "../assets/icons/s4.png";
+import s5 from "../assets/icons/s5.png";
+import s6 from "../assets/icons/s6.png";
+import s7 from "../assets/icons/s7.png";
 import {AiFillHome} from 'react-icons/ai'
 import {BsGlobe2,BsFillPeopleFill} from 'react-icons/bs'
 import {BiSolidLayer} from "react-icons/bi"
@@ -10,17 +17,23 @@ export const navLinks = [
     id: "",
     title: "Home",
   },
+  
+  
   {
-    id: "about",
-    title: "About US",
+    id: "service",
+    title: "IT Service",
   },
   {
     id: "product",
     title: "Products",
   },
   {
-    id: "service",
-    title: "Service",
+    id: "solution",
+    title: "Solution",
+  },
+  {
+    id: "about",
+    title: "About US",
   },
   {
     id: "contact",
@@ -92,7 +105,7 @@ export const feedback = [
       "quick implementation of cloud and cloud data services",
     name: "Mobile App Design",
     title: "App Development",
-    img: people01,
+    img: s1,
   },
   {
     id: "feedback-2",
@@ -100,7 +113,7 @@ export const feedback = [
       "Ecommerce,B2B and B2C Webdesign and Development",
     name: "Web Design & Development",
     title: "Web Development",
-    img: people02,
+    img: s2,
   },
   {
     id: "feedback-3",
@@ -108,7 +121,7 @@ export const feedback = [
       "Setting up your business for the future is the focal point of our IT Strategy and Architecture services",
     name: "IT Strategy & Architecture",
     title: "Management Development",
-    img: people03,
+    img: s3,
   },
   {
     id: "feedback-4",
@@ -116,7 +129,7 @@ export const feedback = [
       "Our DevOps department specializes in ensuring high velocity and high quality software",
     name: "Devops",
     title: "Connecting Development",
-    img: people03,
+    img: s4,
   },
   {
     id: "feedback-5",
@@ -124,7 +137,7 @@ export const feedback = [
       "Without much hassles on your to do list every day.",
     name: "On Site Staffing",
     title: "Management Development",
-    img: people03,
+    img: s4,
   },
   {
     id: "feedback-6",
@@ -132,7 +145,7 @@ export const feedback = [
       "We can handle your outsourced work at our New Jersey as well Surat ODC",
     name: "Outsource",
     title: "Management Development",
-    img: people03,
+    img: s5,
   },
   {
     id: "feedback-7",
@@ -140,7 +153,7 @@ export const feedback = [
       "Product,Customer,Financial, Asset, Human Resources and Manufacturing Analysis",
     name: "Data Analysis",
     title: "Data Management",
-    img: people03,
+    img: s6,
   },
   {
     id: "feedback-8",
@@ -148,7 +161,7 @@ export const feedback = [
       "Without much hassles on your to do list every day",
     name: "Offshore Staffing",
     title: "Staffing Management",
-    img: people03,
+    img: s7,
   },
 ];
 
@@ -176,62 +189,65 @@ export const footerLinks = [
     title: "Useful Links",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Home",
+        link: "/",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "IT Services",
+        link: "/service",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "Product",
+        link: "/product",
       },
       {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        name: "Contact Us",
+        link: "/contact",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        name: "About Us",
+        link: "/about",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Our Services",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Web Development",
+        // link: "https://www.hoobank.com/help-center/",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Application Development",
+        // link: "https://www.hoobank.com/partners/",
+      },
+      {
+        name: "Cyber Security",
+        // link: "https://www.hoobank.com/suggestions/",
+      },
+      {
+        name: "Blog Websites",
+        // link: "https://www.hoobank.com/blog/",
+      },
+      {
+        name: "AI & ML",
+        // link: "https://www.hoobank.com/newsletters/",
+      },
+    ],
+  },
+  {
+    title: "Contact Us",
+    links: [
+      {
+        name: "info@avinyait.com",
+        // link: "https://www.hoobank.com/our-partner/",
+      },
+      {
+        name: "www.avinyait.com",
+        // link: "https://www.hoobank.com/become-a-partner/",
+      },
+      {
+        name:"732-737-7408"
       },
     ],
   },

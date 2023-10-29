@@ -5,6 +5,7 @@ import ContactUs from "./components/ContactUs";
 import './components/navbar.css'
 import React, { Component } from 'react'
 import { Route,Routes,BrowserRouter as Router } from "react-router-dom";
+import Soulution from "./components/Soulution";
 
 export default class App extends Component {
   constructor(props){
@@ -88,6 +89,19 @@ export default class App extends Component {
                   >
                     <div className={`${styles.boxWidth}`}>
                       <Business />
+                      <CTA />
+                    </div>
+                  </div>
+                }
+              />
+              <Route
+                path="/solution"
+                element={
+                  <div
+                    className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}
+                  >
+                    <div className={`${styles.boxWidth}`}>
+                      <Soulution />
                       <CTA />
                     </div>
                   </div>

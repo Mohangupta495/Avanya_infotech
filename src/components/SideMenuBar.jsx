@@ -5,6 +5,7 @@ import SideMenuButtons from "../small-components/SideMenuButtons";
 import Button from '@mui/material/Button';
 import "./navbar.css"
 import { navigateToScreen } from "../constants/utils";
+import { Link } from "react-router-dom";
 
 export default class SideMenuBar extends Component {
     constructor(props){
@@ -20,14 +21,15 @@ export default class SideMenuBar extends Component {
       }`;
     return (
       <div className={sideMenuClassName} onMouseOver={()=>{this.setState({isShowFullMenu:true})}}  onMouseOut={()=>{this.setState({isShowFullMenu:false})}} style={{width:!isShowFullMenu?"70px":"auto"}}>
-        <div className="flex ">
+        <a href="/">
+        <div className="flex " onClick={()=>{}} style={{cursor:"pointer"}}>
           <img src={logo} alt="hoobank" className="w-[34px] h-[34px]" />
-
           {isShowFullMenu && <div className="logoTextForSideMenu">
             <p>Avinya </p>
             <span className="text-gradient">Infotech</span>
           </div>}
         </div>
+        </a>
         <div className="mt-10 flex gap-9 flex-col">
             {linksForSideMenu.map((button)=>{
                 return(<SideMenuButtons name={button.title} icon={button.icon} isShowFullMenu={this.state.isShowFullMenu} id={button.id} link={button.link}/>)
