@@ -295,3 +295,126 @@ export const clients = [
   // },
   {}
 ];
+
+export const solutionData = [
+  {
+    heading: "Game App",
+    title: [
+      "Create exciting games for all ages.",
+      "Engage users with immersive gameplay.",
+      "Innovate with cutting-edge graphics.",
+      "Get ready to level up your gaming experience."
+    ],
+    img: s1,
+  },
+  {
+    heading: "CyberSecurity",
+    title: [
+      "Protect your data with top-notch security.",
+      "Stay one step ahead of cyber threats.",
+      "Defend your digital world with confidence.",
+      "Your shield against online dangers."
+    ],
+    img: s2,
+  },
+  {
+    heading: "Blockchain",
+    title: [
+      "Unlock the potential of decentralized technology.",
+      "Secure and transparent transactions.",
+      "Join the future of digital finance.",
+      "Experience the power of blockchain."
+    ],
+    img: s3,
+  },
+  {
+    heading: "Fintech",
+    title: [
+      "Revolutionize the way you manage finances.",
+      "Smart solutions for your financial goals.",
+      "Invest, save, and spend wisely.",
+      "Your financial future starts here."
+    ],
+    img: s7,
+  },
+  {
+    heading: "Realestate",
+    title: [
+      "Find your dream property with ease.",
+      "Explore real estate options that fit you.",
+      "Your key to the world of real estate.",
+      "Unlock the door to your new home."
+    ],
+    img: s4,
+  },
+  {
+    heading: "Entertainment",
+    title: [
+      "Endless fun and entertainment for everyone.",
+      "Dive into a world of movies, music, and more.",
+      "Your source of joy and amusement.",
+      "Where entertainment knows no bounds."
+    ],
+    img: s5,
+  },
+  {
+    heading: "Travel",
+    title: [
+      "Discover new horizons and adventures.",
+      "Plan your perfect getaway with ease.",
+      "Your journey begins here.",
+      "Explore the world, one destination at a time."
+    ],
+    img: s6,
+  },
+  {
+    heading: "Aviation",
+    title: [
+      "Take flight with confidence and comfort.",
+      "Your gateway to the skies.",
+      "Experience aviation like never before.",
+      "Flying made simple and enjoyable."
+    ],
+    img: s7,
+  },
+  {
+    heading: "IoT",
+    title: [
+      "Connect and control your world through IoT.",
+      "Smart solutions for a smarter life.",
+      "Bringing the Internet of Things to you.",
+      "Empower your devices with IoT technology."
+    ],
+    img: s4,
+  },
+  {
+    heading: "News",
+    title: [
+      "Stay informed with the latest news updates.",
+      "Your source for breaking news and stories.",
+      "Explore the world through news.",
+      "Where information meets your curiosity."
+    ],
+    img: s5,
+  },
+  {
+    heading: "Social Network",
+    title: [
+      "Connect, share, and interact with the world.",
+      "Build your social presence online.",
+      "Your network, your way.",
+      "Where friendships are just a click away."
+    ],
+    img: s6,
+  },
+  {
+    heading: "Logistics",
+    title: [
+      "Efficient logistics solutions for your business.",
+      "Streamline your supply chain with us.",
+      "Your partner in moving goods worldwide.",
+      "Delivering logistics excellence."
+    ],
+    img: s7,
+  },
+];
